@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Movie Review Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Movie Review Application is a simple  application built with React. It allows users to add, view, edit, and delete movie reviews. This project was designed as an introductory project to demonstrate React basics, including state management, component-based architecture, and form handling.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Add a Movie:** Users can add a new movie by providing a title and description.
+- **View Movie Details:** Users can view details of a selected movie, including all associated reviews.
+- **Add a Review:** Users can add reviews for specific movies.
+- **Edit a Review:** Users can edit their own reviews.
+- **Delete a Review:** Users can delete reviews.
+- **Responsive Design:** The application is responsive and adapts to different screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React:** For building the user interface.
+- **React Router:** For handling navigation between different views.
+- **CSS:** For styling the application.
 
-### `npm test`
+## Project Structure
+src/
+│
+├── components/
+│ ├── AddMovie.js
+│ ├── MovieDetail.js
+│ ├── MovieList.js
+│ └── ReviewForm.js
+│
+├── styles/
+│ └── App.css
+│
+├── App.js
+└── index.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- `AddMovie.js`: Component for adding a new movie.
+- `MovieDetail.js`: Component for viewing movie details and managing reviews.
+- `MovieList.js`: Component for displaying the list of movies.
+- `ReviewForm.js`: Component for submitting a review.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js and npm (Node Package Manager) installed on your system.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/yourusername/movie-review-app.git
+   cd movie-review-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
