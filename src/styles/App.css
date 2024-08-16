@@ -1,0 +1,175 @@
+/* src/styles/App.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a; /* Dark background for contrast */
+  background-image: url('/public/images/movie-background.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0; /* Light text color for better readability on dark background */
+}
+
+/* Container for the app */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(3, 3, 3, 0.9); /* Slightly transparent white background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+header {
+  background-color: #333; /* Darker header background */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Title and Subheadings */
+h1 {
+  font-size: 2.8rem; /* Larger title */
+  color: #f1c40f; /* Bright yellow for prominence */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #f39c12; /* Lighter yellow for subheadings */
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #1e1e1e; /* Darker background for list items */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button Styles */
+button {
+  background-color: #3498db; /* Bright blue for buttons */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add margin to space out buttons */
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:disabled {
+  background-color: #7f8c8d; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Add additional margin to "View Details" button */
+.view-details-button {
+  margin-right: 10px; /* Add space between "View Details" and other buttons */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Link Styles */
+a {
+  color: #3498db; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.review-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.review-form textarea {
+  margin-bottom: 10px;
+  background-color: #0a0a0a;
+  color: #fff; /* Sets the text color to white */
+  border: 1px solid #444; /* Optional: Add a border to make it stand out */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Placeholder text color */
+.review-form textarea::placeholder {
+  color: #ccc; /* Sets the placeholder text color to a light grey */
+}
+
+
+.review-form button {
+  align-self: flex-end;
+}
+
+/* Error Messages */
+.error {
+  color: #e74c3c; /* Red for errors */
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
